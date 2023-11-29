@@ -11,16 +11,15 @@ const Discover = ({ setOpenModal }) => {
       const response = await fetch(`${API_URL}&=${title}`);
       const data = await response.json();
       setMovies(data.Search);
-      console.log(data.Search);
     };
     searchMovie();
   }, []);
 
   return (
     <div className="container">
-      {movies.map((movie) => {
+      {movies.map((movie , key) => {
         return (
-          <div
+          <div key={key}
             className="movie"
             onClick={() => setOpenModal({ state: true, movie: movie })}
           >
