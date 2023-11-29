@@ -7,7 +7,7 @@ import Discover from "./Discover";
 
 
 const MovieSpace = ({openModal ,setOpenModal}) => {
-  const API_URL = "http://www.omdbapi.com?apikey=32eedc2d";
+  const API_URL = "https://www.omdbapi.com?apikey=32eedc2d";
 
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");

@@ -3,7 +3,7 @@ import "./Discover.css"
 import { useState, useEffect } from "react";
 
 const Discover = ({ setOpenModal }) => {
-  const API_URL = "http://www.omdbapi.com?s=avengers&apikey=32eedc2d";
+  const API_URL = "https://www.omdbapi.com?s=avengers&apikey=32eedc2d";
 
   const [movies, setMovies] = useState([]);
   useEffect(() => {
